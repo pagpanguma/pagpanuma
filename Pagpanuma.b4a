@@ -1,0 +1,218 @@
+﻿Version=5.8
+NumberOfModules=59
+Module1=Starter
+Module2=Introductory
+Module3=Menu
+Module4=Start
+Module5=Grow
+Module6=Categories
+Module7=Choosep
+Module8=Pdetails
+Module9=Pcontrol
+Module10=Pestdetails
+Module11=Opest3
+Module12=Opest4
+Module13=Opest5
+Module14=Opest
+Module15=Compost
+Module16=Compost2
+Module17=Compost3
+Module18=Compost4
+Module19=Compost5
+Module20=Compost6
+Module21=Opest1
+Module22=Opest2
+Module23=Indigenous
+Module24=Indigenous2
+Module25=Indigenous3
+Module26=Indigenous4
+Module27=Indigenous5
+Module28=Indigenous6
+Module29=Dangan
+Module30=Foliar
+Module31=Gardening
+Module32=Seed
+Module33=Diff
+Module34=Tips
+Module35=startlay1
+Module36=Dangan2
+Module37=Dangan3
+Module38=Dangan4
+Module39=Dangan5
+Module40=Dangan6
+Module41=Pasiuna
+Module42=Symptoms
+Module43=Weather
+Module44=startlay3
+Module45=startlay4
+Module46=startlay5
+Module47=Goingorganic
+Module48=Goorganic1
+Module49=Goorganic2
+Module50=Goorganic3
+Module51=Goorganic4
+Module52=Goorganic5
+Module53=Intro1
+Module54=startlay2
+Module55=Intro2
+Module56=Intro3
+Module57=Upadate
+Module58=AboutUs
+Module59=credit
+Build1=Default,b4a.example
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="19"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~
+IconFile=
+NumberOfFiles=87
+File1=aboutpag.bal
+File2=back_icon.png
+File3=basket.pdf
+File4=blackbugs.pdf
+File5=botanical.pdf
+File6=chinook.db
+File7=compost1.bal
+File8=cplant.bal
+File9=cpost1.bal
+File10=cpost2.bal
+File11=cpost3.bal
+File12=cpost4.bal
+File13=cpost5.bal
+File14=d1.bal
+File15=d2.bal
+File16=d3.bal
+File17=d4.bal
+File18=d5.bal
+File19=dangan1.bal
+File20=demo.pdf
+File21=details.bal
+File22=diff1.bal
+File23=Ekosistema.pdf
+File24=farmplan.pdf
+File25=foliar1.bal
+File26=forecast.bal
+File27=gardening1.bal
+File28=gge.pdf
+File29=Growing.bal
+File30=home_icon.png
+File31=ind1.bal
+File32=ind2.bal
+File33=ind3.bal
+File34=ind4.bal
+File35=ind5.bal
+File36=indigenous1.bal
+File37=insect.pdf
+File38=intro.bal
+File39=intro1.txt
+File40=Introdesign1.bal
+File41=Introdesign2.bal
+File42=Introdesign3.bal
+File43=kitto.pdf
+File44=LACTOBACILLI.pdf
+File45=lay1.bal
+File46=lay2.bal
+File47=lay3.bal
+File48=lay4.bal
+File49=lay5.bal
+File50=logo.jpg
+File51=mainmenu.bal
+File52=opest1.bal
+File53=org1.bal
+File54=org2.bal
+File55=org3.bal
+File56=org4.bal
+File57=org5.bal
+File58=organic.bal
+File59=orgtips.bal
+File60=Pagpanguma.db
+File61=paisuna1.bal
+File62=pakontra.pdf
+File63=pcategory.bal
+File64=pest1.bal
+File65=pest2.bal
+File66=pest3.bal
+File67=pest4.bal
+File68=pest5.bal
+File69=Pestc.bal
+File70=pestd.bal
+File71=pesti.pdf
+File72=plantpropagation.pdf
+File73=process.pdf
+File74=quick.pdf
+File75=seed1.bal
+File76=soilfertility.pdf
+File77=Splash.bal
+File78=starts.bal
+File79=sukgar.pdf
+File80=susagriinphil.pdf
+File81=sustainableagri.pdf
+File82=symptom.bal
+File83=theoryonsusagri.pdf
+File84=tungro.pdf
+File85=updte.bal
+File86=vegegarden.pdf
+File87=watersoilconser.pdf
+NumberOfLibraries=7
+Library1=core
+Library2=sql
+Library3=json
+Library4=stringutils
+Library5=http
+Library6=httputils2
+Library7=pdfviewer
+@EndOfDesignText@
+ #Region  Project Attributes 
+	#ApplicationLabel: Pagpanguma
+	#VersionCode: 1
+	#VersionName: 
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+#End Region 
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: False
+#End Region
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+            Dim Timer1 As Timer
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+
+	
+	Private copyright As Label
+	Private imglogo As ImageView
+	Private Label1 As Label
+	Private Label2 As Label
+	Private mainpnl As Panel
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	'Do not forget to load the layout file created with the visual designer. For example:
+	Activity.LoadLayout("Splash")
+	
+	mainpnl.Visible=True
+Timer1.Initialize("Timer1", 3000)
+Timer1.Enabled=True
+
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Sub Timer1_tick
+
+mainpnl.Visible=False
+Timer1.Enabled = False
+StartActivity(Introductory)
+End Sub
+
